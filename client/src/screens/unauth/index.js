@@ -75,6 +75,7 @@ const Index = () => {
       }).unwrap();
       console.log(res, " resss");
       handleShowAlert(dispatch, "success", res?.message);
+      localStorage.setItem("jwtToken", res.token);
       dispatch(setCredentials({ ...res }));
       navigate("/");
     } catch (err) {
@@ -162,6 +163,7 @@ const Index = () => {
       dispatch(setCredentials({ ...res }));
       setIsOtp(false);
       setIsLoadingOtp(false);
+      localStorage.setItem("jwtToken", res.token);
       handleShowAlert(dispatch, "success", res?.message);
       console.log(res, " ressssss");
     } catch (err) {
