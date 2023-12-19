@@ -6,7 +6,8 @@ const getJwtToken = () => {
 };
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:5000/",
+  // baseUrl: "http://localhost:5000/",
+  baseUrl: "https://food-delevery-dep-1-api.vercel.app/",
   prepareHeaders: (headers) => {
     const token = getJwtToken();
     if (token) {
