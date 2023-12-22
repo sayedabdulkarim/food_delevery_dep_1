@@ -21,6 +21,8 @@ const AppHeader = () => {
       const res = await logOut().unwrap();
       console.log(res, "res, from logoutttt");
       dispatch(logOutUser());
+      localStorage.removeItem("jwtToken");
+      localStorage.removeItem("userInfo");
       navigate("/auth");
     } catch (error) {
       console.log(error, " errrrrrrr");

@@ -41,6 +41,7 @@ const Signup = () => {
         password,
       }).unwrap();
       console.log(res, " resss");
+      localStorage.setItem("jwtToken", res.token);
       handleShowAlert(dispatch, "success", res?.message);
       dispatch(setCredentials({ ...res }));
       // navigate("/");
