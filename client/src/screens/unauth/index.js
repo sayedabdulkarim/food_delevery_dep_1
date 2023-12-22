@@ -23,7 +23,7 @@ const Index = () => {
   const currentText = useTextCycle(texts, 3000); // 1000ms = 1 second
   //misc
   //useState
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [isOtp, setIsOtp] = useState(false);
   const [user, setUser] = useState(null);
   const [isLoginActive, setIsLoginActive] = useState(true);

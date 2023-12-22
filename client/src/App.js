@@ -8,6 +8,7 @@ import { useMessage } from "./hooks/useAlert.js";
 const App = () => {
   const { showMessage } = useMessage();
   const { isAlert, type, content } = useSelector((state) => state.alertReducer);
+  const { userInfo } = useSelector((state) => state.authReducer);
   const location = useLocation(); // Get the current location
 
   // Scroll to top on route change
@@ -27,7 +28,12 @@ const App = () => {
   }, [isAlert, content, type, showMessage]);
 
   return (
-    <div className="main_wrapper">
+    <div
+      className="main_wrapper"
+      style={{
+        marginTop: userInfo ? "80px" : "",
+      }}
+    >
       <Outlet />
       <Footer />
     </div>
