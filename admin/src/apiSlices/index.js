@@ -12,8 +12,8 @@ const getJwtToken = () => {
 };
 
 const baseQuery = fetchBaseQuery({
-  baseUrl: "http://localhost:5000/",
-  // baseUrl: "https://food-delevery-dep-1-api.vercel.app/",
+  // baseUrl: "http://localhost:5000/",
+  baseUrl: "https://food-delevery-dep-1-api.vercel.app/",
   credentials: "include", // Necessary for cookies to be included
   prepareHeaders: (headers) => {
     // const csrfToken = getCsrfToken();
