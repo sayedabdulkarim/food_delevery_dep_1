@@ -1,33 +1,31 @@
 import React from "react";
-
 const Index = () => {
   return (
-    <div className="d_rQj footer_container">
-      <div className="_25jJQ">
+    <div className="footerContainer">
+      <div className="foodBody">
         {/* near me links */}
-        <div id="near-me-links" className="RB8ET">
-          <h4 className="T_dbb">Explore Every Restaurants Near Me</h4>
-          <div className="_1_sSy">
-            <ul className="_1w9D3">
-              <li className="_2JILy">
-                <a className="_3TjLz b-Hy9" href="/restaurants-near-me">
+        <div id="near-me-links" className="footerPart1">
+          <h4 className="baseFooter">Explore Every Restaurants Near Me</h4>
+          <div className="pageFooter">
+            <ul className="groundLink">
+              <li className="explore">
+                <a className="exploreLink top" href="/restaurants-near-me">
                   explore restaurants near me
                 </a>
               </li>
             </ul>
-            <ul className="_1w9D3">
-              <li className="_2JILy">
-                <a className="_3TjLz b-Hy9" href="/best-restaurants-near-me">
+            <ul className="bottomLink">
+              <li className="related">
+                <a className="near top" href="/best-restaurants-near-me">
                   explore top rated restaurants near me
                 </a>
               </li>
             </ul>
           </div>
         </div>
-
         {/* copyrights */}
-        <div className="_3zqGM">
-          <div className="_26WmF">
+        <div className="footerPart2">
+          <div className="top">
             <a href="/">
               <img
                 className=""
@@ -39,10 +37,10 @@ const Index = () => {
               />
             </a>
           </div>
-          <div className="_2BWW_">© 2023 Swiggy</div>
-          <div className="_2-f1I">
+          <div className="middle">© 2023 Swiggy</div>
+          <div className="bottom">
             <a
-              className="_1Az3W"
+              className="footIcons"
               href="https://www.facebook.com/swiggy.in"
               rel="nofollow noopener noreferrer"
               alt="facebook"
@@ -59,7 +57,7 @@ const Index = () => {
               />
             </a>
             <a
-              className="_1Az3W"
+              className="footIcons"
               href="https://pinterest.com/swiggyindia"
               rel="nofollow noopener noreferrer"
               alt="pintrest"
@@ -76,7 +74,7 @@ const Index = () => {
               />
             </a>
             <a
-              className="_1Az3W"
+              className="footIcons"
               href="https://instagram.com/swiggyindia/"
               rel="nofollow noopener noreferrer"
               alt="instagram"
@@ -93,7 +91,7 @@ const Index = () => {
               />
             </a>
             <a
-              className="_1Az3W"
+              className="footIcons"
               href="https://twitter.com/swiggy"
               rel="nofollow noopener noreferrer"
               alt="twitter"
