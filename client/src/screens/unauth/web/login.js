@@ -2,6 +2,7 @@ import React from "react";
 import { Spin } from "antd";
 
 const login = ({
+  showDrawer,
   loginLoading,
   isLoadingOtp,
 
@@ -22,7 +23,10 @@ const login = ({
             <div className="_1Tg1D">Login</div>
             <div className="HXZeD"></div>
             <div className="_2r91t">
-              or <span className="_3p4qh">create an account</span>
+              or{" "}
+              <span className="_3p4qh" onClick={() => showDrawer(false)}>
+                create an account
+              </span>
             </div>
             <img
               className="jdo4W"

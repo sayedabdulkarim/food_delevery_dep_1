@@ -37,9 +37,11 @@ const Index = ({
               signupFormData={signupFormData}
               handleSingUpForm={handleSingUpForm}
               handleSignUpSubmit={handleSignUpSubmit}
+              showDrawer={showDrawer}
             />
           ) : (
             <Login
+              showDrawer={showDrawer}
               loginLoading={loginLoading}
               isLoadingOtp={isLoadingOtp}
               loginFormData={loginFormData}

@@ -6,6 +6,7 @@ const Signup = ({
   handleSingUpForm,
   handleSignUpSubmit,
   registerLoading,
+  showDrawer,
 }) => {
   const { phone, name, email } = signupFormData;
   return (
@@ -15,7 +16,10 @@ const Signup = ({
           <div className="_1Tg1D">Sign up</div>
           <div className="HXZeD"></div>
           <div className="_2r91t">
-            or <span className="_3p4qh">login to your account</span>
+            or{" "}
+            <span className="_3p4qh" onClick={() => showDrawer(true)}>
+              login to your account
+            </span>
           </div>
           <img
             className="jdo4W"
